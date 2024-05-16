@@ -32,6 +32,7 @@
   </header>
 
   <script>
+    
     document.addEventListener('DomContentLoaded', function() {
       const nameElement = document.querySelector('#name');
       const usernameElement = document.querySelector('#username');
@@ -51,7 +52,7 @@
           avatarElement.src = json.avatar_url;
           followingElement.innerText = json.following;
           followersElement.innerText = json.followers;
-          reposElement.innerText = json.public_repos; 
+          repos.innerText = json.public_repos; 
           linkElement.href = json.html_url;
         })
         .catch(function(error) {
